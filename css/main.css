@@ -1,0 +1,296 @@
+@charset "utf-8";
+
+
+@media (max-width: 599px) {
+
+    header .rico {
+        width: 2000px;
+        height: 96px;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        justify-content: space-between;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        background-color: red;
+    }
+
+    header #logo {
+        width: 200PX;
+        height: 80PX;
+        margin: 0 0 0 5%;
+    }
+
+
+    header #scol {}
+
+
+    #section1 {
+        width: 100%;
+        height: 800px;
+        margin: 0 auto;
+        background-color: aquamarine;
+    }
+
+
+    #seciton2 {}
+
+    #section3 {}
+
+    #section4 {}
+
+    #section5 {}
+
+    #section6 {}
+
+    #section7 {}
+
+    #section8 {}
+
+
+    footer {}
+}
+
+@media (min-width: 600px) {}
+
+
+header {}
+
+header .rico {
+    width: 2000px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: red;
+}
+
+header #logo {}
+
+header #scol {}
+
+
+#section1 {
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+
+
+#seciton2 {}
+
+#section3 {}
+
+#section4 {}
+
+#section5 {}
+
+#section6 {}
+
+#section7 {}
+
+#section8 {}
+
+
+footer {}
+
+
+
+@media (min-width: 1100px) {}
+
+header {}
+
+header .rico {
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    overflow: visible;
+    position: relative;
+
+}
+
+header #logo {
+    width: 200PX;
+    height: 80PX;
+    margin: 0 0 0 5%;
+
+}
+
+header #logo img {
+    width: 200px;
+    height: 80px;
+    margin: 0 0 0 5%;
+}
+
+
+header #scol {
+    display: block;
+}
+
+header ul li {
+    display: inline;
+}
+
+header ul li a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+header ul li a:hover {
+    color: #ffc526;
+}
+
+.active {
+    color: #ffc526
+}
+
+
+
+
+
+
+#section1 {
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+
+
+#section1 video {
+    width: 100%;
+    height: 700px;
+}
+
+#seciton2 {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    background-color: #2e2e2e;
+}
+
+
+#section2>#s2wrap {
+    width: 100%;
+    height: auto;
+    padding: 0 0 20px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+#s2wrap>#story {
+    width: 90%;
+    height: auto;
+    margin: 100px auto 0;
+    text-align: center;
+}
+
+
+
+#s2wrap>#story>p {
+    margin: 0;
+    color: #9e9d9b;
+    font-family: "Century Gothic";
+    line-height: 160%;
+}
+
+#s2wrap>#story>p:nth-of-type(2) {
+    margin: 10px 0 0 0;
+}
+
+#story h1{margin: 0;
+    color:#232323;
+    font-family: "Century Gothic";}
+
+#s2wrap>#story h2 {
+    margin: 0;
+    color: black;
+    font-family: "Century Gothic";
+    font-size: 35px;
+}
+
+
+
+#story>#box_wrap {
+    width: 100%;
+    height: auto;
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#box_wrap>.box {
+    width: 90%;
+    height: 105px;
+    background-color: #232323;
+    margin: 10px 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+
+#box_wrap>.box>p {
+    font-family: "맑은 고딕";
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 10px 15px;
+    color: white;
+    font-size: 15px;
+}
+
+
+
+#section3 {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+
+}
+
+#section4 {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+}
+
+#section5 {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+}
+
+#section6 {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+}
+
+#section7 {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+}
+
+#section8 {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+}
+
+
+ footer  {width:100%; height:auto; background-color:#1f1f1f; padding:0 0 20px 0;}
