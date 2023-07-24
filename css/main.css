@@ -1,11 +1,11 @@
 @charset "utf-8";
 
 
-@media (max-width: 599px) {
+@media (min-width: 599px) {
 
     header .rico {
-        width: 2000px;
-        height: 96px;
+        width: 100%;
+        height: 100px;
         display: flex;
         align-items: center;
         position: fixed;
@@ -13,7 +13,7 @@
         left: 0;
         top: 0;
         z-index: 10;
-        background-color: red;
+        background-color: whitesmoke;
     }
 
     header #logo {
@@ -23,20 +23,226 @@
     }
 
 
-    header #scol {}
+    header #scol {
+        display: block;
+    }
 
 
     #section1 {
         width: 100%;
-        height: 800px;
         margin: 0 auto;
-        background-color: aquamarine;
+        background-color: #232323;
+    }
+
+    #section1 video {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #section2 {}
+
+    #section2>#s2wrap {}
+
+    #s2wrap>#story {}
+
+    #s2wrap>#story>p {}
+
+    #s2wrap>#story>p:nth-of-type(2) {}
+
+    #story h1 {}
+
+    #s2wrap>#story h2 {}
+
+    #story>#box_wrap {}
+
+    #box_wrap>.box {}
+
+    #box_wrap>.box>p {}
+
+    #section3 {}
+
+    #section3>#s3_title {}
+
+    #s3_title>p {}
+
+    #s3_title>p:nth-of-type(2) {}
+
+    #s3_title>h2 {}
+
+    #s3_title>#line {}
+
+    #section3>#iconbox {}
+
+    .icon>i {}
+
+    .icon>h3 {}
+
+    #iconbox>div:nth-of-type(3)>i {}
+
+    #iconbox>div:nth-of-type(3)>h3 {}
+
+
+    #section3>#photobox {}
+
+    #photobox>#half1 {}
+
+    #half1 img {}
+
+    #half1>.goal {}
+
+    .goal img {}
+
+    .goal img:hover {}
+
+    #half2>h2 {}
+
+    #half2>p {}
+
+
+    #section4 {
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+    }
+
+    #section5 {
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+    }
+
+    #section6 {
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+    }
+
+    #section7 {
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+    }
+
+    #section8 {
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
     }
 
 
-    #seciton2 {}
+
+    footer {
+        width: 100%;
+        height: auto;
+        background-color: #1f1f1f;
+        padding: 0 0 20px 0;
+    }
+}
+
+
+@media (min-width: 600px) {
+
+    header .rico {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        overflow: hidden;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: whitesmoke;
+        z-index: 10;
+    }
+
+    header #logo {
+        width: 200PX;
+        height: 80PX;
+        margin: 0 0 0 5%;
+    }
+
+    header #scol {
+        display: block;
+    }
+
+
+    #section1 {
+        width: 100%;
+        margin: 0 auto;
+        background-color: #232323;
+    }
+
+
+    #section1 video {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #section2 {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 50px 0;
+        background-color: #5a5a5a
+    }
+
+    #section2>#s2wrap {}
+
+    #s2wrap>#story {}
+
+    #s2wrap>#story>p {}
+
+    #s2wrap>#story>p:nth-of-type(2) {}
+
+    #story h1 {}
+
+    #s2wrap>#story h2 {}
+
+    #story>#box_wrap {}
+
+    #box_wrap>.box {}
+
+    #box_wrap>.box>p {}
 
     #section3 {}
+
+    #section3>#s3_title {}
+
+    #s3_title>p {}
+
+    #s3_title>p:nth-of-type(2) {}
+
+    #s3_title>h2 {}
+
+    #s3_title>#line {}
+
+    #section3>#iconbox {}
+
+    .icon>i {}
+
+    .icon>h3 {}
+
+    #iconbox>div:nth-of-type(3)>i {}
+
+    #iconbox>div:nth-of-type(3)>h3 {}
+
+
+    #section3>#photobox {}
+
+    #photobox>#half1 {}
+
+    #half1 img {}
+
+    #half1>.goal {}
+
+    .goal img {}
+
+    .goal img:hover {}
+
+    #half2>h2 {}
+
+    #half2>p {}
 
     #section4 {}
 
@@ -44,253 +250,391 @@
 
     #section6 {}
 
-    #section7 {}
+    #section7 {
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+    }
 
-    #section8 {}
+    #section8 {
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+    }
 
-
-    footer {}
+    footer {
+        width: 100%;
+        height: auto;
+        background-color: #1f1f1f;
+        padding: 0 0 20px 0;
+    }
 }
 
-@media (min-width: 600px) {}
+@media (min-width: 1200px) {
+
+    header .rico {
+        width: 100%;
+        height: 100px;
+        margin: 0 auto;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: space-around;
+        overflow: visible;
+        position: relative;
+
+    }
+
+    header #logo {
+        width: 200PX;
+        height: 80PX;
+        margin: 0 0 0 5%;
+
+    }
+
+    header #logo img {
+        width: 200px;
+        height: 80px;
+        margin: 0 0 0 5%;
+    }
+
+    header #scol {
+        display: block;
+    }
+
+    header ul li {
+        display: inline;
+    }
+
+    header ul li a {
+        padding: 0 20px;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        font-family: "Century Gothic";
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    header ul li a:hover {
+        color: #ffc526;
+    }
+
+    .active {
+        color: #ffc526
+    }
+
+    #section1 {
+        width: 100%;
+        margin: 0 auto;
+        background-color: #232323;
+    }
+
+    #section1 video {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    #section2 {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 50px 0;
+        background-color: whitesmoke;
+    }
+
+    #section2>#s2wrap {
+        width: 100%;
+        height: auto;
+        padding: 0 0 20px 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+
+    #s2wrap>#story {
+        width: 100%;
+        height: auto;
+        margin: 30px auto 0;
+        text-align: center;
+    }
+
+    #s2wrap>#story>p {
+        margin: 0 auto;
+        color: #282828;
+        font-family: "Century Gothic";
+        padding: 10px;
+        line-height: 90%;
+    }
+
+    #s2wrap>#story>p:nth-of-type(2) {
+        margin: 30px 0 0 0;
+    }
+
+    #story h1 {
+        margin: 0 auto;
+        color: black;
+        font-family: "Century Gothic";
+        font-size: 65px;
+    }
+
+    #s2wrap>#story h2 {
+        margin: 0 auto;
+        color: #5a5a5a;
+        font-family: "Century Gothic";
+        font-size: 35px;
+    }
+
+    #story>#box_wrap {
+        width: 100%;
+        height: auto;
+        margin: 40px 0 0 0;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #box_wrap>.box {
+        width: 70%;
+        height: 110px;
+        background-color: #232323;
+        margin: 10px 0;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    #box_wrap>.box>p {
+        font-family: "맑은 고딕";
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin: 0 auto;
+        padding: 10px 15px;
+        color: white;
+        font-size: 15px;
+    }
+
+    #section3 {
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+        background-color: #232323;
+    }
+
+    #section3>#s3_title {
+        width: 520px;
+        height: 235px;
+        margin: 30px 0 0 0;
+    }
+
+    #s3_title>p {
+        text-align: center;
+        margin: 0 auto;
+        color: #9e9d9b;
+    }
+
+    #s3_title>p:nth-of-type(2) {
+        margin: 30px;
+        font-family: "맑은 고딕";
+        font-style: italic;
+        font-size: 14px;
+    }
+
+    #s3_title>h2 {
+        margin: 0 auto;
+        color: white;
+        font-family: "Century Gothic";
+        font-size: 35px;
+    }
+
+    #s3_title>#line {
+        width: 150px;
+        height: 80px;
+        margin: 0 auto;
+        border: 3px solid darkgray;
+        margin: -230px auto;
+    }
+
+    #section3>#iconbox {
+        width: 100%;
+        height: 125px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .icon>i {
+        font-size: 45px;
+        color: white;
+    }
+
+    .icon>h3 {
+        color: white;
+        font-size: 16px;
+        font-family: "Century Gothic";
+    }
+
+    #iconbox>div:nth-of-type(3)>i {
+        color: #ffc526;
+    }
+
+    #iconbox>div:nth-of-type(3)>h3 {
+        color: #ffc526;
+    }
+
+    #section3>#photobox {
+        width: 100%;
+        height: 800px;
+        background-color: #282828;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    #photobox>#half1 {
+        width: 100%;
+        height: 800px;
+
+    }
+
+    #half1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #half1>.goal {
+        width: 1250px;
+        height: 100%;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .goal img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .goal img:hover {
+        transform: scale(1.2);
+        transition: 0.7s;
+    }
+
+    #half2>h2 {
+        color: white;
+        font-family: "Century Gothic";
+        font-size: 45px;
+        margin: 80px;
+        text-align: left;
+    }
+
+    #half2>p {
+        color: white;
+        font-family: "Century Gothic";
+        width: 100%;
+        font-size: 18px;
+        margin: 30px;
+        text-align: center;
+    }
+
+    #section4 {
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+        background-color: #232323;
+    }
+
+    #section4>h2 {
+        color: white;
+        font-family: "Century Gothic";
+        font-size: 45px;
+        text-align: center;
+    }
+
+    #section4>#category {
+        width: 100%;
+        height: auto;
+        margin: 130px auto 0;
+    }
+
+    #category>ul {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+
+    #category>ul li {
+        color: white;
+        font-size: 14px;
+        font-family: "Century Gothic";
+        cursor: pointer;
+        padding: 5px 10px;
+    }
+
+    #category>ul li:hover {
+        color: gold;
+    }
+
+    #section4>#gallery {
+        width: 100%;
+        height: auto;
+        margin: 30px auto 0;
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+
+    #gallery>.gall {
+        width: 100%;
+        height: 305px;
+        cursor: pointer;
+        overflow: hidden;
+        margin: 8px;
+    }
+
+    .gall img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .gall img:hover {
+        transform: scale(1.2);
+        transition: 0.7s;
+    }
+
+    #section5 {
+        width: 100%;
+        height: 600px;
+        padding: 50px 0;
+        background-color: yellow;
+    }
 
 
-header {}
 
-header .rico {
-    width: 2000px;
-    height: 100px;
-    margin: 0 auto;
-    background-color: red;
+    #section6 {
+        width: 100%;
+        height: 600px;
+        padding: 50px 0;
+        background-color: blue;
+    }
+
+    #section7 {
+        width: 100%;
+        height: 600px;
+        padding: 50px 0;
+        background-color: aqua;
+    }
+
+    #section8 {
+        width: 100%;
+        height: 600px;
+        padding: 50px 0;
+        background-color: red;
+    }
+
+    footer {
+        width: 100%;
+        height: 250px;
+        background-color: #1f1f1f;
+        padding: 0 0 20px 0;
+    }
 }
-
-header #logo {}
-
-header #scol {}
-
-
-#section1 {
-    width: 100%;
-    height: 800px;
-    margin: 0 auto;
-    background-color: aquamarine;
-}
-
-
-#seciton2 {}
-
-#section3 {}
-
-#section4 {}
-
-#section5 {}
-
-#section6 {}
-
-#section7 {}
-
-#section8 {}
-
-
-footer {}
-
-
-
-@media (min-width: 1100px) {}
-
-header {}
-
-header .rico {
-    width: 100%;
-    height: 100px;
-    margin: 0 auto;
-    background-color: red;
-    display: flex;
-    justify-content: space-around;
-    overflow: visible;
-    position: relative;
-
-}
-
-header #logo {
-    width: 200PX;
-    height: 80PX;
-    margin: 0 0 0 5%;
-
-}
-
-header #logo img {
-    width: 200px;
-    height: 80px;
-    margin: 0 0 0 5%;
-}
-
-
-header #scol {
-    display: block;
-}
-
-header ul li {
-    display: inline;
-}
-
-header ul li a {
-    padding: 0 20px;
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-    font-family: "Century Gothic";
-    font-weight: bold;
-    font-size: 14px;
-}
-
-
-header ul li a:hover {
-    color: #ffc526;
-}
-
-.active {
-    color: #ffc526
-}
-
-
-
-
-
-
-#section1 {
-    width: 100%;
-    height: 800px;
-    margin: 0 auto;
-    background-color: aquamarine;
-}
-
-
-#section1 video {
-    width: 100%;
-    height: 700px;
-}
-
-#seciton2 {
-    width: 100%;
-    height: auto;
-    padding: 50px 0;
-    background-color: #2e2e2e;
-}
-
-
-#section2>#s2wrap {
-    width: 100%;
-    height: auto;
-    padding: 0 0 20px 0;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-flow: column wrap;
-}
-
-#s2wrap>#story {
-    width: 90%;
-    height: auto;
-    margin: 100px auto 0;
-    text-align: center;
-}
-
-
-
-#s2wrap>#story>p {
-    margin: 0;
-    color: #9e9d9b;
-    font-family: "Century Gothic";
-    line-height: 160%;
-}
-
-#s2wrap>#story>p:nth-of-type(2) {
-    margin: 10px 0 0 0;
-}
-
-#story h1{margin: 0;
-    color:#232323;
-    font-family: "Century Gothic";}
-
-#s2wrap>#story h2 {
-    margin: 0;
-    color: black;
-    font-family: "Century Gothic";
-    font-size: 35px;
-}
-
-
-
-#story>#box_wrap {
-    width: 100%;
-    height: auto;
-    margin: 50px 0 0 0;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-#box_wrap>.box {
-    width: 90%;
-    height: 105px;
-    background-color: #232323;
-    margin: 10px 0;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-}
-
-
-#box_wrap>.box>p {
-    font-family: "맑은 고딕";
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin: 0;
-    padding: 10px 15px;
-    color: white;
-    font-size: 15px;
-}
-
-
-
-#section3 {
-    width: 100%;
-    height: auto;
-    padding: 50px 0;
-
-}
-
-#section4 {
-    width: 100%;
-    height: auto;
-    padding: 50px 0;
-}
-
-#section5 {
-    width: 100%;
-    height: auto;
-    padding: 50px 0;
-}
-
-#section6 {
-    width: 100%;
-    height: auto;
-    padding: 50px 0;
-}
-
-#section7 {
-    width: 100%;
-    height: auto;
-    padding: 50px 0;
-}
-
-#section8 {
-    width: 100%;
-    height: auto;
-    padding: 50px 0;
-}
-
-
- footer  {width:100%; height:auto; background-color:#1f1f1f; padding:0 0 20px 0;}
