@@ -356,7 +356,7 @@
     #s2wrap>#story {
         width: 100%;
         height: auto;
-        margin: 30px auto 0;
+        margin: 100px auto 0;
         text-align: center;
     }
 
@@ -397,7 +397,7 @@
     }
 
     #box_wrap>.box {
-        width: 70%;
+        width: 60%;
         height: 110px;
         background-color: #232323;
         margin: 10px 0;
@@ -414,6 +414,77 @@
         padding: 10px 15px;
         color: white;
         font-size: 15px;
+    }
+
+    #submit {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+    }
+
+    #submit>textarea {
+        width: 80%;
+        height: 30px;
+        border: none;
+        margin: 30px 0 0 0;
+        border-bottom: 1px solid gray;
+        color: #9e9d9b;
+        background-color: transparent;
+        font-family: "Arial"
+    }
+
+    #submit>textarea:nth-of-type(1) {
+        margin: 70px 0 0 0;
+    }
+
+    #submit>textarea:nth-of-type(4) {
+        padding: 0 0 60px 0;
+    }
+
+    #submit>button {
+        width: 220px;
+        height: 50px;
+        background-color: orange;
+        color: whitesmoke;
+        border-radius: 2px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: "Century Gothic";
+        margin: 20px auto 0;
+    }
+
+    #s2wrap>#info {
+        width: 100%;
+        height: 630px;
+        background-color: #232323;
+        margin: 30px auto 0;
+    }
+
+    #info>#request {
+        width: 100%;
+        height: 110px;
+        background-color: #ffc526;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    #request p {
+        margin: 0 0 0 20px;
+        color: #ffc526;
+        font-family: "Century Gothic";
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #request span {
+        font-size: 25px;
+        color: #ffc526;
+        font-family: "Century Gothic";
+        font-weight: bold;
+        text-align: center;
     }
 
     #section3 {
@@ -504,7 +575,7 @@
 
     #half1>.goal {
         width: 1250px;
-        height: 100%;
+        height: auto;
         cursor: pointer;
         overflow: hidden;
     }
@@ -522,7 +593,7 @@
     #half2>h2 {
         color: white;
         font-family: "Century Gothic";
-        font-size: 45px;
+        font-size: 35px;
         margin: 80px;
         text-align: left;
     }
@@ -546,7 +617,7 @@
     #section4>h2 {
         color: white;
         font-family: "Century Gothic";
-        font-size: 45px;
+        font-size: 40px;
         text-align: center;
     }
 
@@ -577,7 +648,7 @@
     #section4>#gallery {
         width: 100%;
         height: auto;
-        margin: 30px auto 0;
+        margin: 50px auto 0;
         display: flex;
         flex-wrap: nowrap;
         align-content: center;
@@ -585,7 +656,7 @@
 
     #gallery>.gall {
         width: 100%;
-        height: 305px;
+        height: auto;
         cursor: pointer;
         overflow: hidden;
         margin: 8px;
@@ -597,29 +668,116 @@
     }
 
     .gall img:hover {
-        transform: scale(1.2);
-        transition: 0.7s;
+        transform: scale(1.3);
+        transition: 0.8s;
     }
 
     #section5 {
         width: 100%;
-        height: 600px;
+        height: auto;
         padding: 50px 0;
         background-color: yellow;
     }
 
 
+    #section5>#s5_title_box {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+    }
+
+    #s5_title {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    #s5_title>p {
+        color: #9e9d9b;
+        margin: 45px 0 0 0;
+    }
+
+    #s5_title>p:nth-of-type(1) {
+        color: #9e9d9b;
+        margin: 45px 0 0 0;
+    }
+
+    #s5_title>p:nth-of-type(2) {
+        width: 90%;
+        margin: 30px auto 0;
+    }
+
+    #s5_title>h2 {
+        margin: 0 0 0 30px;
+        color: white;
+        font-family: "Century Gothic";
+        font-size: 35px;
+    }
+
+    #s5_title>h2>span {
+        color: #ffc525;
+        font-family: "Century Gothic";
+        font-size: 45px;
+    }
+
+    #s5_title>#line {
+        width: 70px;
+        height: 90px;
+        border: 2px solid gold;
+        margin: -90px auto 0;
+    }
+
+    #cert_box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin: 30px 0 0 0;
+    }
+
+    #cert_box>.box {
+        width: 90%;
+        height: 105px;
+        background-color: #232323;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    #cert_box>.box>i {
+        color: #ffc525;
+        font-size: 40px;
+        display: block;
+        text-align: center;
+    }
+
+    #cert_box>.box>p {
+        font-family: "맑은 고딕";
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin: 0;
+        padding: 10px 15px;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+    }
+
 
     #section6 {
         width: 100%;
-        height: 600px;
+        height: 800px;
         padding: 50px 0;
         background-color: blue;
     }
 
     #section7 {
         width: 100%;
-        height: 600px;
+        height: 800px;
         padding: 50px 0;
         background-color: aqua;
     }
@@ -628,8 +786,108 @@
         width: 100%;
         height: 600px;
         padding: 50px 0;
-        background-color: red;
+        background-color: #232323;
     }
+
+    #section8>#contact_wrap {
+        width: 1150px;
+        height: 550px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    #contact_wrap>p {
+        color: #9e9d9b;
+        margin: 25px 0 0 35px;
+    }
+
+    #contact_wrap>h2 {
+        margin: 0 0 0 30px;
+        color: white;
+        font-family: "Century Gothic";
+        font-size: 35px;
+    }
+
+    #contact_wrap>h2>span {
+        color: #ffc525;
+        font-family: "Century Gothic";
+        font-size: 45px;
+    }
+
+    #contact_wrap>#line {
+        width: 70px;
+        height: 90px;
+        border: 2px solid gold;
+        margin: -90px 0 0 0;
+    }
+
+    #contact_wrap>#contact_box {
+        width: 1150px;
+        height: 440px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #contact_box>#left_box {
+        width: 400px;
+        height: 350px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+    }
+
+    #left_box>.contact_icon {
+        width: 300px;
+        height: 80px;
+        display: flex;
+    }
+
+    .contact_icon>i {
+        color: plum;
+        font-size: 45px;
+    }
+
+    .contact_icon>p {
+        color: #9e9d9b;
+        font-size: 17px;
+        margin: 0 0 0 40px;
+    }
+
+    #contact_box>#right_box {
+        width: 730px;
+        height: 400px;
+    }
+
+    #right_box>textarea {
+        width: 333px;
+        height: 20px;
+        border: none;
+        margin: 60px 15px 0 0;
+        border-bottom: 1px solid gray;
+        color: #9e9d9b;
+        background-color: transparent;
+        font-family: "Arial"
+    }
+
+    #right_box>textarea:nth-of-type(5) {
+        width: 700px;
+        padding: 0 0 60px 0;
+    }
+
+    #right_box>button {
+        width: 700px;
+        height: 50px;
+        background-color: white;
+        border: none;
+        color: #232323;
+        border-radius: 3px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: "Century Gothic";
+        margin: 30px 0 0 0;
+    }
+
 
     footer {
         width: 100%;
@@ -637,4 +895,83 @@
         background-color: #1f1f1f;
         padding: 0 0 20px 0;
     }
+
+    footer>#footer_wrap {
+        width: 1220px;
+        height: 100px;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #footer_wrap>p {
+        color: white;
+        margin: 0;
+        font-size: 14px;
+        font-family: "Arial";
+    }
+
+    #footer_wrap>#sns_box {
+        width: 420px;
+        height: auto;
+        display: flex;
+        margin: 0 0 0 35px;
+    }
+
+    #sns_box>.sns {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px 0 0;
+        background-color: #161616;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sns>i {
+        font-size: 17px;
+        color: #9d9d9b;
+    }
+
+    #footer_wrap>input {
+        width: 300px;
+        height: 33px;
+        float: left;
+        margin: 0;
+        font-family: "돋움";
+        font-size: 12px;
+        color: #9e9d9b;
+        font-style: italic;
+        background-color: transparent;
+        border: 0;
+        border: 3px solid #292929;
+        margin: 0 0 0 25px;
+    }
+
+    #footer_wrap>button {
+        width: 80px;
+        height: 39px;
+        background-color: #292929;
+        color: white;
+        border: none;
+    }
+
+    footer>#copy {
+        width: 500px;
+        height: auto;
+        margin: 60px auto 0;
+    }
+
+    #copy>p {
+        font-size: 13px;
+        color: #9e9d9b;
+        text-align: center;
+        line-height: 180%;
+    }
+
+    #copy>p span {
+        color: #ffc526;
+    }
+
+
 }
