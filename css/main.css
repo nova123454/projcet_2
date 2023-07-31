@@ -28,6 +28,58 @@
     }
 
 
+
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 103;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin-top: 30px;
+    }
+
+    .overlay a {
+        padding: 10px;
+        line-height: 180%;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        transition: 0.3s;
+        display: block;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+        color: #ffc526;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 50px;
+    }
+
+
+
+
+
+
+
+
     #section1 {
         width: 100%;
         margin: 0 auto;
@@ -39,6 +91,8 @@
         margin: 0 auto;
     }
 
+
+
     #section2 {
         width: 100%;
         height: auto;
@@ -47,22 +101,24 @@
         background-color: whitesmoke;
     }
 
+
+
     #section2>#s2wrap {
 
-        width: 1225px;
+        width: 100%;
         height: auto;
         padding: 0 0 20px 0;
         margin: 0 auto;
         display: flex;
         justify-content: center;
-
+        flex-flow: column wrap;
     }
 
     #s2wrap>#story {
 
         width: 65%;
         height: auto;
-        /* margin: 100px auto 0; */
+        margin: 100px auto 0;
         text-align: center;
 
 
@@ -75,18 +131,14 @@
         font-family: "Century Gothic";
         padding: 10px;
         line-height: 90%;
-
-
     }
 
     #s2wrap>#story>p:nth-of-type(2) {
 
         margin: 30px 0 0 0;
-
-
     }
 
-    #story h1 {
+    #s2wrap>#story h1 {
 
         margin: 0 auto;
         color: black;
@@ -117,7 +169,7 @@
 
     #box_wrap>.box {
 
-        width: 60%;
+        width: 80%;
         height: 110px;
         background-color: #232323;
         margin: 10px 0;
@@ -215,7 +267,7 @@
 
     #section3>#s3_title {
 
-        width: 520px;
+        width: 100%;
         height: 235px;
         margin: 30px auto 0;
 
@@ -260,8 +312,20 @@
         width: 100%;
         height: 125px;
         display: flex;
-        justify-content: space-around;
+        flex-flow: row wrap;
+        justify-content: center;
+
     }
+
+
+    #iconbox>.icon {
+        width: 130px;
+        height: 130px;
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
 
     .icon>i {
 
@@ -289,12 +353,10 @@
     #section3>#photobox {
 
         width: 100%;
-        /* height: 800px; */
+        height: auto;
         background-color: #282828;
         display: flex;
         flex-wrap: nowrap;
-
-
     }
 
     #photobox>#half1 {
@@ -437,6 +499,7 @@
 
     .gall img:hover {
         transform: scale(1.3);
+        transition: 0.7s;
 
     }
 
@@ -606,12 +669,14 @@
 
 
     #section6 {
-        width: 100%;
+        width: 80%;
         height: auto;
         padding: 50px 0;
+       flex-flow: column;
+        
     }
 
-    #section6 h1 {
+    #section6>h1 {
         font-family: "맑은 고딕";
         font-weight: bold;
         letter-spacing: 3px;
@@ -622,7 +687,7 @@
         text-align: center;
     }
 
-    #section6 h3 {
+    #section6>h3 {
         font-family: "맑은 고딕";
         font-weight: bold;
         letter-spacing: 3px;
@@ -646,18 +711,18 @@
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
         cursor: pointer;
         overflow: hidden;
-        width: 330px;
-        height: 440px;
+        width: 200px;
+        height: 300px;
         display: inline-block;
     }
 
     .boxbox img {
-        width: 100%;
-        height: 100%;
+        width: 50%;
+        height: 50%;
     }
 
     .boxbox .info {
-        position: absolute;
+        position: relative;
         left: 0;
         top: auto;
         bottom: -85px;
@@ -671,8 +736,9 @@
 
     .boxbox .info h3 {
 
+        color: white;
         font-size: 28px;
-
+        margin: 0 auto;
     }
 
     .boxbox:hover .info {
@@ -687,6 +753,7 @@
         width: 100%;
         height: auto;
         padding: 50px 0;
+        background-color: #232323;
     }
 
     #blog1 {
@@ -699,7 +766,7 @@
 
     #blog1 h3 {
         width: 100%;
-        font-size: 18px;
+        font-size: 24px;
         margin: 0 auto;
         padding: 30px;
         text-align: center;
@@ -709,7 +776,6 @@
         width: 100%;
         margin: 0 auto;
         text-align: center;
-        padding: 20px;
     }
 
     #blog1 span {
@@ -1038,7 +1104,7 @@
 
     #s2wrap>#story {
 
-        width: 65%;
+        width: 55%;
         height: auto;
         /* margin: 100px auto 0; */
         text-align: center;
@@ -1980,12 +2046,12 @@
     }
 
     #section2>#s2wrap {
-        width: 1225px;
+        width: 100%;
         height: auto;
         padding: 0 0 20px 0;
         margin: 0 auto;
         display: flex;
-        justify-content: center;
+   justify-content: center;
     }
 
     #s2wrap>#story {
@@ -2025,19 +2091,17 @@
         width: 100%;
         height: auto;
         margin: 40px 0 0 0;
-        display: flex;
-        flex-flow: column wrap;
+        display: flex;      
         align-items: center;
         justify-content: center;
     }
 
     #box_wrap>.box {
-        width: 60%;
+        width: 100%;
         height: 110px;
         background-color: #232323;
         margin: 10px 0;
         display: flex;
-        flex-flow: column wrap;
         justify-content: center;
     }
 
@@ -2053,7 +2117,6 @@
 
     #submit {
         display: flex;
-        flex-flow: column wrap;
         align-content: center;
     }
 
@@ -2504,7 +2567,7 @@
     }
 
     .good_box>.percent {
-        width: 380px;
+        width: 350px;
         height: 5px;
         background-color: white;
     }
@@ -2555,11 +2618,11 @@
 
     .boxbox {
         position: relative;
-        margin: 25px;
+        margin: 15px;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
         cursor: pointer;
         overflow: hidden;
-        width: 330px;
+        width: 380px;
         height: 440px;
         display: inline-block;
     }
@@ -2614,9 +2677,8 @@
 
     #blog1 h3 {
         width: 100%;
-        font-size: 18px;
+        font-size: 23px;
         margin: 0 auto;
-        padding: 30px;
         text-align: center;
     }
 
@@ -2624,7 +2686,7 @@
         width: 100%;
         margin: 0 auto;
         text-align: center;
-        padding: 20px;
+
     }
 
     #blog1 span {
@@ -2648,7 +2710,7 @@
     }
 
     #section7 .box1 .textbox {
-        width: 380px;
+        width: 350px;
         height: 200px;
         margin: 0 auto;
         display: flex;
