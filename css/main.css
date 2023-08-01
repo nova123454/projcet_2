@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 
-@media (min-width: 599px) {
+@media (max-width: 599px) {
 
     header .rico {
         width: 100%;
@@ -24,7 +24,7 @@
 
 
     header #scol {
-        display: block;
+        display: none;
     }
 
 
@@ -35,7 +35,7 @@
         position: fixed;
         z-index: 103;
         top: 0;
-        left: 0;
+        right: 0;
         background-color: rgb(0, 0, 0);
         background-color: rgba(0, 0, 0, 0.9);
         overflow-x: hidden;
@@ -73,13 +73,6 @@
         font-size: 50px;
     }
 
-
-
-
-
-
-
-
     #section1 {
         width: 100%;
         margin: 0 auto;
@@ -92,7 +85,6 @@
     }
 
 
-
     #section2 {
         width: 100%;
         height: auto;
@@ -100,7 +92,6 @@
         padding: 50px 0;
         background-color: whitesmoke;
     }
-
 
 
     #section2>#s2wrap {
@@ -120,8 +111,6 @@
         height: auto;
         margin: 100px auto 0;
         text-align: center;
-
-
     }
 
     #s2wrap>#story>p {
@@ -144,8 +133,6 @@
         color: black;
         font-family: "Century Gothic";
         font-size: 65px;
-
-
     }
 
     #s2wrap>#story h2 {
@@ -154,7 +141,6 @@
         color: #5a5a5a;
         font-family: "Century Gothic";
         font-size: 35px;
-
     }
 
     #story>#box_wrap {
@@ -197,7 +183,6 @@
         color: #9e9d9b;
         background-color: transparent;
         font-family: "Arial"
-
     }
 
     #submit>textarea:nth-of-type(1) {
@@ -261,8 +246,6 @@
         height: auto;
         padding: 50px 0;
         background-color: #232323;
-
-
     }
 
     #section3>#s3_title {
@@ -270,16 +253,13 @@
         width: 100%;
         height: 235px;
         margin: 30px auto 0;
-
     }
 
 
     #s3_title>p {
-
         text-align: center;
         margin: 0 auto;
         color: #9e9d9b;
-
     }
 
     #s3_title>p:nth-of-type(2) {
@@ -304,7 +284,6 @@
         border: 3px solid gold;
         margin: -230px auto;
 
-
     }
 
     #section3>#iconbox {
@@ -314,7 +293,6 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-
     }
 
 
@@ -672,8 +650,8 @@
         width: 80%;
         height: auto;
         padding: 50px 0;
-       flex-flow: column;
-        
+        flex-flow: column;
+
     }
 
     #section6>h1 {
@@ -1010,7 +988,7 @@
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (max-width:1236px) {
 
     header {
         width: 100%;
@@ -1022,13 +1000,17 @@
         margin: 0 auto;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         overflow: hidden;
         position: fixed;
         left: 0;
         top: 0;
         background-color: whitesmoke;
         z-index: 10;
+    }
+
+    .rico #b {
+        margin-right: 30px;
     }
 
     header #logo {
@@ -1045,7 +1027,7 @@
 
 
     header #scol {
-        display: block;
+        display: none;
     }
 
     header ul li {
@@ -1068,6 +1050,50 @@
 
     .active {
         color: #ffc526;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 103;
+        top: 0;
+        right: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin-top: 30px;
+    }
+
+    .overlay a {
+        padding: 10px;
+        line-height: 180%;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        transition: 0.3s;
+        display: block;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+        color: #ffc526;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 50px;
     }
 
 
@@ -1280,8 +1306,8 @@
     }
 
     #s3_title>#line {
-        width: 150px;
-        height: 80px;
+        width: 50px;
+        height: 110px;
         margin: 0 auto;
         border: 3px solid gold;
         margin: -230px auto;
@@ -1294,11 +1320,8 @@
         justify-content: space-around;
     }
 
-    .icon>i {
-        font-size: 45px;
-        color: white;
-        margin: 0 auto;
-    }
+   .icon i{margin: 15px;
+}
 
     .icon>h3 {
         color: white;
@@ -1402,11 +1425,11 @@
     }
 
     #section4>#line {
-        width: 150px;
-        height: 80px;
+        width: 50px;
+        height: 110px;
         margin: 0 auto;
         border: 3px solid gold;
-        margin: -50px auto;
+        margin: -70px auto;
     }
 
     #section4>#category {
@@ -1511,8 +1534,8 @@
     }
 
     #s5_title>#line {
-        width: 70px;
-        height: 90px;
+        width: 50px;
+        height: 110px;
         border: 2px solid gold;
         margin: -90px auto 0;
     }
@@ -1535,12 +1558,8 @@
         margin: 10px;
     }
 
-    #cert_box>.box>i {
-        color: #ffc525;
-        font-size: 40px;
-        display: block;
-        text-align: center;
-    }
+   #cert_box i{
+    margin: 15px;}
 
     #cert_box>.box>p {
         font-family: "맑은 고딕";
@@ -1559,7 +1578,11 @@
         height: auto;
         display: flex;
         margin: 50px 0 0 0;
+      
     }
+
+
+
 
     #box123>#box1 {
         width: 43%;
@@ -1600,13 +1623,14 @@
     }
 
     #box123>#box3 {
-        width: 34%;
-        height: 470px;
+        width: 33%;
+        height: auto;
         background-color: #232323;
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
         align-content: center;
+        
     }
 
     #box3>.good_box>p {
@@ -1633,7 +1657,7 @@
 
     #section6 {
         width: 100%;
-        height: 800px;
+        height: auto;
         padding: 30px 0;
         margin: 0 auto;
         background-color: #1f1f1f;
@@ -1655,14 +1679,14 @@
         font-weight: bold;
         letter-spacing: 3px;
         margin: 0;
-        padding: 10px 15px;
+        padding: 15px 15px;
         color: white;
         font-size: 25px;
         text-align: center;
     }
 
     #section6 #line {
-        width: 160px;
+        width: 50px;
         height: 110px;
         border: 2px solid gold;
         margin: -100px auto 0;
@@ -1670,13 +1694,15 @@
 
     .boxbox {
         position: relative;
-        margin: 25px;
+        margin: 30px;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
         cursor: pointer;
         overflow: hidden;
+        display: flex;
         width: 330px;
         height: 440px;
-        display: inline-block;
+
+       
     }
 
     .boxbox img {
@@ -1715,6 +1741,7 @@
         width: 100%;
         height: auto;
         padding: 50px 0;
+        background-color: #232323;
     }
 
     #blog1 {
@@ -1727,7 +1754,7 @@
 
     #blog1 h3 {
         width: 100%;
-        font-size: 18px;
+        font-size: 16px;
         margin: 0 auto;
         padding: 30px;
         text-align: center;
@@ -1744,8 +1771,7 @@
         width: 100%;
         font-size: 45px;
         color: orange;
-
-    }
+}
 
     #section7 .box1 {
 
@@ -1760,11 +1786,12 @@
     }
 
     #section7 .box1 .textbox {
-        width: 380px;
-        height: 200px;
+        width: 360px;
+        height: 230px;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
+        letter-spacing: 1px;
     }
 
 
@@ -1966,7 +1993,7 @@
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1237px) {
 
 
     header {
@@ -1978,11 +2005,17 @@
     header .rico {
         width: 100%;
         margin: 0 auto;
-        background-color: whitesmoke;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         overflow: visible;
-        position: relative;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(5px);
+        z-index: 10;
+    }
+
+    .rico #b {
+        display: none;
     }
 
     header #logo {
@@ -2000,16 +2033,18 @@
 
     header #scol {
         display: block;
+        margin: 30px 30px 0 0;
     }
 
     header ul li {
         display: inline;
+        color: #fff;
     }
 
     header ul li a {
         padding: 0 20px;
         text-decoration: none;
-        color: black;
+        color: #fff;
         display: inline-block;
         font-family: "Century Gothic";
         font-weight: bold;
@@ -2023,6 +2058,10 @@
 
     .active {
         color: #ffc526
+    }
+
+    .overlay {
+        display: none;
     }
 
     #section1 {
@@ -2046,18 +2085,19 @@
     }
 
     #section2>#s2wrap {
-        width: 100%;
+        width: 1220px;
         height: auto;
         padding: 0 0 20px 0;
         margin: 0 auto;
         display: flex;
-   justify-content: center;
+        justify-content: center;
     }
 
     #s2wrap>#story {
         width: 65%;
         height: auto;
-        /* margin: 100px auto 0; */
+        margin: 0 auto;
+        padding: 10px;
         text-align: center;
     }
 
@@ -2070,7 +2110,7 @@
     }
 
     #s2wrap>#story>p:nth-of-type(2) {
-        margin: 30px 0 0 0;
+        margin: 20px 0 0 0;
     }
 
     #story h1 {
@@ -2091,18 +2131,19 @@
         width: 100%;
         height: auto;
         margin: 40px 0 0 0;
-        display: flex;      
+        display: flex;
         align-items: center;
         justify-content: center;
     }
 
     #box_wrap>.box {
-        width: 100%;
+        width: 23%;
         height: 110px;
         background-color: #232323;
-        margin: 10px 0;
+        margin: 50px 1% 0;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     #box_wrap>.box>p {
@@ -2118,6 +2159,8 @@
     #submit {
         display: flex;
         align-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     #submit>textarea {
@@ -2153,7 +2196,7 @@
 
     #s2wrap>#info {
         width: 30%;
-        height: 630px;
+        height: auto;
         background-color: #232323;
         margin: 30px auto 0;
     }
@@ -2218,10 +2261,10 @@
     }
 
     #s3_title>#line {
-        width: 150px;
-        height: 80px;
+        width: 50px;
+        height: 110px;
         margin: 0 auto;
-        border: 3px solid gold;
+        border: 3px solid #ffc526;
         margin: -230px auto;
     }
 
@@ -2232,10 +2275,10 @@
         justify-content: space-around;
     }
 
-    .icon>i {
-        font-size: 45px;
+    .icon i {
+        /* font-size: 45px; */
         color: white;
-        margin: 0 auto;
+        margin: 0 10px;
     }
 
 
@@ -2354,11 +2397,11 @@
     }
 
     #section4>#line {
-        width: 150px;
-        height: 80px;
+        width: 50px;
+        height: 110px;
         margin: 0 auto;
         border: 3px solid gold;
-        margin: -50px auto;
+        margin: -70px auto;
     }
 
     #section4>#category {
@@ -2462,8 +2505,8 @@
     }
 
     #s5_title>#line {
-        width: 70px;
-        height: 90px;
+        width: 50px;
+        height: 110px;
         border: 2px solid gold;
         margin: -90px auto 0;
     }
@@ -2486,11 +2529,9 @@
         margin: 10px;
     }
 
-    #cert_box>.box>i {
-        color: #ffc525;
-        font-size: 40px;
-        display: block;
-        text-align: center;
+
+    #cert_box i {
+        margin: 15px;
     }
 
     #cert_box>.box>p {
@@ -2510,6 +2551,7 @@
         height: auto;
         display: flex;
         margin: 50px 0 0 0;
+        padding: 10px;
     }
 
     #box123>#box1 {
@@ -2580,19 +2622,19 @@
 
     #section6 {
         width: 100%;
-        height: 800px;
-        padding: 30px 0;
+        height: auto;
+        padding: 60px 0;
         margin: 0 auto;
-
         background-color: #1f1f1f;
     }
+
 
     #section6 h1 {
         font-family: "맑은 고딕";
         font-weight: bold;
         letter-spacing: 3px;
         margin: 0;
-        padding: 10px 15px;
+        padding: 20px 15px;
         color: white;
         font-size: 25px;
         text-align: center;
@@ -2603,28 +2645,28 @@
         font-weight: bold;
         letter-spacing: 3px;
         margin: 0;
-        padding: 10px 15px;
+        padding: 15px;
         color: white;
         font-size: 25px;
         text-align: center;
     }
 
     #section6 #line {
-        width: 160px;
+        width: 50px;
         height: 110px;
         border: 2px solid gold;
-        margin: -100px auto 0;
+        margin: -125px auto 0;
     }
 
     .boxbox {
         position: relative;
-        margin: 15px;
+        margin: 1%;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
         cursor: pointer;
         overflow: hidden;
-        width: 380px;
+        width: 23%;
         height: 440px;
-        display: inline-block;
+        float: left;
     }
 
     .boxbox img {
@@ -2636,7 +2678,7 @@
         position: absolute;
         left: 0;
         top: auto;
-        bottom: -85px;
+        bottom: -93px;
         /* overflow: hidden; */
         right: 0;
         background: rgba(0, 0, 0, 0.7);
@@ -2657,14 +2699,12 @@
 
     }
 
-
-
-
     #section7 {
         width: 100%;
-        height: 800px;
-        padding: 50px 0;
+        height: auto;
+        padding: 40px 0;
         background-color: #232323;
+
     }
 
     #blog1 {
@@ -2672,7 +2712,8 @@
         display: flex;
         flex-wrap: wrap;
         color: aliceblue;
-        margin: 0 auto;
+        margin: 20px;
+        padding: 50px;
     }
 
     #blog1 h3 {
@@ -2680,12 +2721,14 @@
         font-size: 23px;
         margin: 0 auto;
         text-align: center;
+
     }
 
     #blog1 h1 {
         width: 100%;
         margin: 0 auto;
         text-align: center;
+        padding: 10px;
 
     }
 
@@ -2701,6 +2744,7 @@
 
         width: 30%;
         margin: 0 auto;
+        padding: 10px;
 
     }
 
@@ -2710,18 +2754,36 @@
     }
 
     #section7 .box1 .textbox {
-        width: 350px;
-        height: 200px;
+        width: 340px;
+        height: 250px;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
     }
 
+
+    #section7 #line {
+        width: 35px;
+        height: 120px;
+        border: 2px solid gold;
+        margin: 0 auto;
+        margin-bottom: -100px;
+    }
+
+    #section7 .box1 .textbox p {
+        font-size: 16px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+
+    }
+
     #section8 {
         width: 100%;
-        height: 600px;
+        height: auto;
         padding: 50px 0;
         background-color: #232323;
+        margin: 0 auto;
     }
 
     #section8>#contact_wrap {
@@ -2750,10 +2812,10 @@
     }
 
     #contact_wrap>#line {
-        width: 70px;
-        height: 90px;
+        width: 50px;
+        height: 100px;
         border: 2px solid gold;
-        margin: -90px 0 0 0;
+        margin: -95px 0 0 0;
     }
 
     #contact_wrap>#contact_box {
@@ -2826,7 +2888,7 @@
 
     footer {
         width: 100%;
-        height: 250px;
+        height: auto;
         background-color: #1f1f1f;
         padding: 0 0 20px 0;
     }

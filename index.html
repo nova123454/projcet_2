@@ -11,6 +11,33 @@
     <script src="https://kit.fontawesome.com/4f44147072.js" crossorigin="anonymous"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
 
+    <script>
+        $(document).ready(function () {
+            //햄버거 메뉴
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+
+            //header fixed
+            $(window).scroll(function () {
+                let ws = $(this).scrollTop();
+                console.log(ws);
+
+                if (ws > 900) {
+                    $(".rico").css("position", "fixed")
+                } else {
+                    $(".rico").css("position", "absolute")
+                }
+            })
+        })
+    </script>
+
+
+
 </head>
 
 <body>
@@ -22,45 +49,63 @@
 
             <ul id="scol">
 
-                <li><a href="section1">HOME ｜</a></li>
-                <li><a href="section2"> BRAND ｜</a></li>
-                <li><a href="section3">DISNEY PLUS ｜</a></li>
-                <li><a href="section4">STORE ｜</a></li>
-                <li><a href="section5">MAGAZINES ｜</a></li>
-                <li><a href="section6">SOCIAL MEDIA ｜</a></li>
-                <li><a href="section7">ANIMALS｜</a></li>
-                <li><a href="section8">ENVIRONMENT｜</a></li>
+                <li><a href="#section1">HOME</a></li>
+                <li>|</li>
+                <li><a href="#section2">BRAND</a></li>
+                <li>|</li>
+                <li><a href="#section3">DISNEY PLUS</a></li>
+                <li>|</li>
+                <li><a href="#section4">STORE</a></li>
+                <li>|</li>
+                <li><a href="#section5">MAGAZINES</a></li>
+                <li>|</li>
+                <li><a href="#section6">SOCIAL MEDIA</a></li>
+                <li>|</li>
+                <li><a href="#section7">ANIMAL</a></li>
             </ul>
 
-            <i class="fas fa-bars"
-            id="b" onclick="openNav()"></i>
+            <i class="fas fa-bars" id="b" onclick="openNav()"></i>
 
         </div>
 
 
         <div id="myNav" class="overlay">
 
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                &times;</a>
 
-<div class="overlay-content">
+            <div class="overlay-content">
 
-<a href="#section1">HOME</a>
-<a href="#section2">STORY</a>
-<a href="#section3">SERVICE</a>
-<a href="#section4">PROJECT</a>
-<a href="#section5">CERTYFY</a>
-<a href="#section6">TEAM</a>
-<a href="#section7">BLOG</a>
-<a href="#section8">CONTACT</a>
+                <a href="#section1">HOME</a>
+                <a href="#section2">STORY</a>
+                <a href="#section3">SERVICE</a>
+                <a href="#section4">PROJECT</a>
+                <a href="#section5">CERTYFY</a>
+                <a href="#section6">TEAM</a>
+                <a href="#section7">BLOG</a>
+                <a href="#section8">CONTACT</a>
 
 
-</div>
+            </div>
 
         </div>
 
 
     </header>
+
+    <script>
+
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+
+
+    </script>
 
 
 
@@ -237,7 +282,7 @@
 
                 <ul>
 
-                    <li>Our Cosmos</li>
+                    <li style="color: #ffc526;">Our Cosmos</li>
                     <li>Blue Dot</li>
                     <li>Our Cosmos</li>
                     <li>Blue Dot</li>
@@ -471,11 +516,11 @@
 
             <div id="blog1">
 
+                <div id="line"></div>
                 <h3>Some Tips For You!</h3>
-
                 <h1>Blog & NEWS<span>.</span></h1>
 
-                <div id="line"></div>
+
 
                 <div class="box1"><img src="img/main/img26.jpg" class="box1btn" alt="">
 
