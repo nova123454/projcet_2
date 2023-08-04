@@ -25,9 +25,10 @@
             //header fixed
             $(window).scroll(function () {
                 let ws = $(this).scrollTop();
-                console.log(ws);
+                let s2 = $('#section2').offset().top;
+                console.log(s2);
 
-                if (ws > 900) {
+                if (ws > s2-150) {
                     $(".rico").css("position", "fixed")
                 } else {
                     $(".rico").css("position", "absolute")
