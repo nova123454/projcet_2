@@ -1,0 +1,545 @@
+@charset "utf-8";
+
+
+
+@media (max-width: 599px) {
+
+    header .rico {
+        width: 100%;
+        height: 100px;
+        padding: 0 3%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(5px);
+        z-index: 10;
+    }
+
+    .rico #b {
+        color: white;
+    }
+
+    header #logo {
+        width: 200PX;
+        height: 80PX;
+        
+    }
+
+    header #scol {
+        display: none;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 103;
+        top: 0;
+        right: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin-top: 30px;
+    }
+
+    .overlay a {
+        padding: 10px;
+        line-height: 180%;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        transition: 0.3s;
+        display: block;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+        color: #ffc526;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 50px;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        background-color: #1f1f1f;
+        padding: 0 0 20px 0;
+    }
+
+    footer>#footer_wrap {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+    }
+
+    #footer_wrap>p {
+        color: white;
+        margin: 30px 0 0 0;
+        font-size: 14px;
+        font-family: "Arial";
+        
+    }
+
+    #footer_wrap > p:nth-of-type(2) {
+        margin:0;}
+
+    #footer_wrap>#sns_box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin: 40px 0;
+    }
+
+    #sns_box> .sns{
+        width: 35%;
+        height: auto;
+        margin: 0 10px 0 0;
+        background-color: #161616;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sns>i {
+        font-size: 17px;
+        color: #9d9d9b;
+    }
+
+    #footer_wrap>input {
+        width: 100%;
+        height: 33px;
+        float: left;
+        margin: 20px auto;
+        font-family: "돋움";
+        font-size: 12px;
+        color: #9e9d9b;
+        font-style: italic;
+        background-color: transparent;
+        border: 0;
+        border: 3px solid #292929;
+        margin: 20px 0;
+    }
+
+    #footer_wrap > button {
+        width: 100px;
+        height: 39px;
+        background-color: #292929;
+        color: white;
+        border: none;
+        margin:0 auto;
+    }
+
+    footer> #copy {
+        width: 40%;
+        height: auto;
+        margin: 60px auto 0;
+        padding: 0 0 20px 0;
+    }
+
+    #copy>p {
+        font-size: 13px;
+        color: #9e9d9b;
+        text-align: center;
+        line-height: 150%;
+    }
+
+    #copy>p span {
+        color: #ffc526;
+    }
+
+}
+
+
+
+
+
+@media (min-width: 600px) and (max-width:1236px) {
+
+    header {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header .rico {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(5px);
+        z-index: 10;
+    }
+
+    .rico #b {
+        margin-right: 30px;
+        color: white;
+    }
+
+    header #logo {
+        width: 200PX;
+        height: 80PX;
+        margin: 0 0 0 5%;
+    }
+
+    header #logo img {
+        width: 200px;
+        height: 80px;
+        margin: 0 0 0 5%;
+    }
+
+
+    header #scol {
+        display: none;
+    }
+
+    header ul li {
+        display: inline;
+    }
+
+    header ul li a {
+        padding: 0 20px;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        font-family: "Century Gothic";
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    header ul li a:hover {
+        color: #ffc526;
+    }
+
+    .active {
+        color: #ffc526;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 103;
+        top: 0;
+        right: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin-top: 30px;
+    }
+
+    .overlay a {
+        padding: 10px;
+        line-height: 180%;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        transition: 0.3s;
+        display: block;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+        color: #ffc526;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 50px;
+    }
+
+footer {
+        width: 100%;
+        height: auto;
+        background-color: #1f1f1f;
+        padding: 0 0 20px 0;
+    }
+
+    footer>#footer_wrap {
+        width: 50%;
+        height: 100px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+
+    #footer_wrap>p {
+        color: white;
+        margin: 0;
+        font-size: 14px;
+        font-family: "Arial";
+    }
+
+    #footer_wrap>#sns_box {
+        width: 70%;
+        height: auto;
+        display: flex;
+        margin: 0 0 0 35px;
+    }
+
+    #sns_box>.sns {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px 0 0;
+        background-color: #161616;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sns>i {
+        font-size: 17px;
+        color: #9d9d9b;
+    }
+
+    #footer_wrap>input {
+        width: 45%;
+        height: 33px;
+        float: left;
+        margin: 0;
+        font-family: "돋움";
+        font-size: 12px;
+        color: #9e9d9b;
+        font-style: italic;
+        background-color: transparent;
+        border: 0;
+        border: 3px solid #292929;
+        margin: 0 0 0 25px;
+    }
+
+    #footer_wrap>button {
+        width: 80px;
+        height: 33px;
+        background-color: #292929;
+        color: white;
+        border: none;
+    }
+
+    footer>#copy {
+        width: 500px;
+        height: auto;
+        margin: 60px auto 0;
+    }
+
+    #copy>p {
+        font-size: 13px;
+        color: #9e9d9b;
+        text-align: center;
+        line-height: 180%;
+    }
+
+    #copy>p span {
+        color: #ffc526;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+@media (min-width: 1237px) {
+
+    header {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    header .rico {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        overflow: visible;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(5px);
+        z-index: 10;
+    }
+
+    .rico #b {
+        display: none;
+    }
+
+    header #logo {
+        width: 200PX;
+        height: 80PX;
+        margin: 0 0 0 5%;
+
+    }
+
+    header #logo img {
+        width: 200px;
+        height: 80px;
+        margin: 0 0 0 5%;
+    }
+
+    header #scol {
+        display: block;
+        margin: 30px 30px 0 0;
+    }
+
+    header ul li {
+        display: inline;
+        color: #fff;
+    }
+
+    header ul li a {
+        padding: 0 20px;
+        text-decoration: none;
+        color: #fff;
+        display: inline-block;
+        font-family: "Century Gothic";
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    header ul li a:hover {
+        color: #ffc526;
+    }
+
+
+    .active {
+        color: #ffc526
+    }
+
+    .overlay {
+        display: none;
+    }
+
+
+    footer {
+        width: 100%;
+        height: auto;
+        background-color: #1f1f1f;
+        padding: 0 0 20px 0;
+    }
+
+    footer>#footer_wrap {
+        width: 1220px;
+        height: 100px;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #footer_wrap>p {
+        color: white;
+        margin: 0;
+        font-size: 14px;
+        font-family: "Arial";
+    }
+
+    #footer_wrap>#sns_box {
+        width: 420px;
+        height: auto;
+        display: flex;
+        margin: 0 0 0 35px;
+    }
+
+    #sns_box>.sns {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px 0 0;
+        background-color: #161616;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sns>i {
+        font-size: 17px;
+        color: #9d9d9b;
+    }
+
+    #footer_wrap>input {
+        width: 300px;
+        height: 33px;
+        float: left;
+        margin: 0;
+        font-family: "돋움";
+        font-size: 12px;
+        color: #9e9d9b;
+        font-style: italic;
+        background-color: transparent;
+        border: 0;
+        border: 3px solid #292929;
+        margin: 0 0 0 25px;
+    }
+
+    #footer_wrap>button {
+        width: 80px;
+        height: 39px;
+        background-color: #292929;
+        color: white;
+        border: none;
+    }
+
+    footer>#copy {
+        width: 500px;
+        height: auto;
+        margin: 60px auto 0;
+    }
+
+    #copy>p {
+        font-size: 13px;
+        color: #9e9d9b;
+        text-align: center;
+        line-height: 180%;
+    }
+
+    #copy>p span {
+        color: #ffc526;
+    }
+
+
+
+
+
+
+    
+}
