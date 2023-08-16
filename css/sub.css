@@ -1,13 +1,437 @@
 @charset "uft-8";
 
 
-@media (max-width: 599px) {}
+@media (max-width: 599px) {
+
+    #twobox {
+
+        width: 100%;
+        height: 800px;
+        margin: 0 auto;
+        background-color: brown;
+        background-size: cover;
+    }
+
+    #twobox h1 {
+        text-align: center;
+        color: #333;
+        text-transform: uppercase;
+        font-size: 35px;
+        padding: 150px 0 0 0px;
+    }
+
+    #twobox h6 {
+        text-align: center;
+        width: 100%;
+        color: #fff;
+        font-size: 30px;
+        margin: 0px 0 20px 0;
+    }
+
+    #twobox button {
+        display: block;
+        padding: 10px 20px;
+        background-color: #000;
+        margin: 0 auto;
+        border-radius: 20px;
+        border: none;
+        color: #fff;
+        opacity: 0.8;
+    }
+
+    #twobox button:hover {
+        cursor: pointer;
+        background-color: #fff;
+        color: #000;
+    }
+
+
+    #sideblog {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: aliceblue;
+        margin: 0 auto;
+    }
+
+    .blog_left {
+        width: 100%;
+        background: aliceblue;
+     
+    }
+
+    .blog_left img {
+        width: 100%;
+
+    }
+
+
+    .blog_right {
+        width: 100%;
+      
+    }
+
+
+    .text {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 34px;
+        letter-spacing: 2px;
+        margin: 0 80px;
+        padding: 0 20px;
+        display: flex;
+        flex-flow: wrap;
+    }
+
+
+    #onebox {
+        width: 100%;
+        background-color: aliceblue;
+        box-sizing: border-box;
+        border: 2px solid #666;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    #onebox h3 {
+        text-align: center;
+        width: 100%;
+        font-size: 40px;
+        color: darkgray;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    #onebox p {
+        text-align: center;
+        width: 100%;
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #onebox img{width: 100%;}
+
+    .box1 {
+        box-shadow: 4px 4px 4px #eee;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #ddd;
+        margin: 1%;
+    }
+
+    .box1 img {
+        width: 100%;
+    }
+
+    .box1 img:hover {
+        opacity: 0.8;
+    }
+
+    .box1 span {
+        color: tomato;
+    }
+
+    .box1 h5 {
+        font-size: 38px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 20px;
+    }
+
+    .box1 p {
+        color: #333;
+        font-size: 40px;
+        letter-spacing: 1px;
+        padding: 5px;
+    }
+
+
+    #midblog {
+        width: 100%;
+        background-color: aliceblue;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+
+    #midblog article {
+        width: 100%;
+        margin: 0 auto;
+        border: solid 3px #ccc;
+    }
+
+
+    article h1 {
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    article p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 15px;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
 
 
 
 
 
-@media (min-width: 600px) and (max-width:1236px) {}
+    article img {
+        width: 100%;
+        height: 100%;
+    }
+
+ 
+    #threebox {width: 100%; height: 100%; 
+        margin: 0 auto;}
+
+
+        
+  .imgbox {width:100%; height:100%; overflow:hidden; position:relative; }
+
+  .imgbox:hover:before{content:""; width:100%; height:100%; position:absolute; top:0; left:0; background: #333; opacity:0.6;}
+
+  .imgbox p {position:absolute; top:0; left:10px; font-size:30px; color:#fff;}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 600px) and (max-width:1236px) {
+
+
+    #twobox {
+
+        width: 100%;
+        margin: 0 auto;
+        background-color: brown;
+        background-size: cover;
+    }
+
+    #twobox h1 {
+        text-align: center;
+        color: #333;
+        text-transform: uppercase;
+        font-size: 35px;
+        padding: 150px 0 0 0px;
+    }
+
+    #twobox h6 {
+        text-align: center;
+        width: 100%;
+        color: #fff;
+        font-size: 30px;
+        margin: 0px 0 20px 0;
+    }
+
+    #twobox button {
+        display: block;
+        padding: 10px 20px;
+        background-color: #000;
+        margin: 0 auto;
+        border-radius: 20px;
+        border: none;
+        color: #fff;
+        opacity: 0.8;
+    }
+
+    #twobox button:hover {
+        cursor: pointer;
+        background-color: #fff;
+        color: #000;
+    }
+
+
+
+    
+
+    #sideblog {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: aliceblue;
+        margin: 0 auto;
+    }
+
+    .blog_left {
+        width: 100%;
+        height: 100%;
+        background: aliceblue;
+    }
+
+    .blog_left img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .blog_right {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .text {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 42px;
+        letter-spacing: 2px;
+        margin: 0 80px;
+        padding: 0 20px;
+    }
+
+
+    #onebox {
+        width: 100%;
+        background-color: aliceblue;
+        box-sizing: border-box;
+        border: 2px solid #666;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #onebox h3 {
+        text-align: center;
+        font-size: 40px;
+        color: darkgray;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    #onebox p {
+        text-align: center;
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+
+    .box1 {
+        box-shadow: 4px 4px 4px #eee;
+        width: 25%;
+        border: 1px solid #ddd;
+        margin: 0 auto;
+    }
+
+    .box1 img {
+        max-width: 100%;
+    }
+
+    .box1 img:hover {
+        opacity: 0.8;
+    }
+
+    .box1 span {
+        color: tomato;
+    }
+
+    .box1 h5 {
+        font-size: 38px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 20px;
+    }
+
+    .box1 p {
+        color: #333;
+        font-size: 40px;
+        letter-spacing: 1px;
+        padding: 5px;
+    }
+
+
+    #midblog {
+        width: 100%;
+        background-color: aliceblue;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #midblog article {
+        width: 20%;
+        margin: 0 auto;
+        border: solid 3px #ccc;
+    }
+
+
+    article img {
+        width: 100%;
+    }
+
+    article h1 {
+        width: 100%;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    article p {
+        width: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 15px;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+
+
+
+
+    #threebox {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+
+    .imgbox {
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+
+.imgbox img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+    .imgbox:hover:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #333;
+        opacity: 0.6;
+    }
+
+    .imgbox p {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        font-size: 30px;
+        color: #fff;
+    }
+
+}
+
+
+
+
+
 
 
 
@@ -18,64 +442,75 @@
 @media (min-width: 1237px) {
 
 
-    #midblog {
-        width: 1237px;
+    #twobox {
+
+        width: 100%;
         height: 800px;
-        background-color: aqua;
-        display: flex;
-        flex-wrap: wrap;
         margin: 0 auto;
+        background-color: brown;
+        background-size: cover;
     }
 
-
-    #midblog h1 {
+    #twobox h1 {
         text-align: center;
-        color: #eee;
+        color: #333;
         text-transform: uppercase;
-        font-size: 45px;
-        padding: 250px 0 0 10px;
+        font-size: 35px;
+        padding: 150px 0 0 0px;
     }
 
-
-    #midblog h6 {
+    #twobox h6 {
         text-align: center;
         width: 100%;
         color: #fff;
-        font-size: 25px;
-        margin: 0px 0 50px 0;
+        font-size: 30px;
+        margin: 0px 0 20px 0;
     }
 
-
-    #midblog button {
+    #twobox button {
         display: block;
-        padding: 5px 35px;
+        padding: 10px 20px;
         background-color: #000;
         margin: 0 auto;
-        border-radius: 40px;
+        border-radius: 20px;
         border: none;
         color: #fff;
-        opacity: 0.6;
+        opacity: 0.8;
     }
 
-    #midblog button:hover {
+    #twobox button:hover {
         cursor: pointer;
-        background-color: #eee;
-        color: #000
+        background-color: #fff;
+        color: #000;
     }
 
+
+
+    article h1 {
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    article p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 15px;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
 
     #sideblog {
-        width: 1237px;
-        height: 800px;
+        width: 100%;
+        height: 1000px;
         display: flex;
-        background-color: blueviolet;
+        flex-wrap: wrap;
+        background-color: aliceblue;
         margin: 0 auto;
     }
 
     .blog_left {
         width: 50%;
         height: 100%;
-        background: red;
+        background: aliceblue;
     }
 
     .blog_left img {
@@ -92,71 +527,140 @@
 
     .text {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 22px;
+        font-size: 42px;
         letter-spacing: 2px;
-        margin: 20px;
-        padding: 10px;
+        margin: 0 80px;
+        padding: 0 20px;
     }
 
 
     #onebox {
-        width: 1237px;
-        height: 800px;
-        background-color: black;
-        border: 3px solid #666;
+        width: 100%;
+        height: 1000px;
+        background-color: aliceblue;
+        box-sizing: border-box;
+        border: 2px solid #666;
         margin: 0 auto;
         display: flex;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #onebox h3 {
+        text-align: center;
+        width: 100%;
+        font-size: 40px;
+        color: darkgray;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    #onebox p {
+        text-align: center;
+        width: 100%;
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+
+    .box1 {
+        box-shadow: 4px 4px 4px #eee;
+        width: 20%;
+        height: 70%;
+        border: 1px solid #ddd;
+        margin: 1%;
+    }
+
+    .box1 img {
+        max-width: 100%;
+    }
+
+    .box1 img:hover {
+        opacity: 0.8;
+    }
+
+    .box1 span {
+        color: tomato;
+    }
+
+    .box1 h5 {
+        font-size: 38px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 20px;
+    }
+
+    .box1 p {
+        color: #333;
+        font-size: 40px;
+        letter-spacing: 1px;
+        padding: 5px;
+    }
+
+
+    #midblog {
+        width: 100%;
+        height: 1000px;
+        background-color: aliceblue;
+        display: flex;
+        flex-wrap: wrap;
         align-items: center;
-        flex-flow: row wrap;
+        margin: 0 auto;
+        padding: 0 50px;
     }
 
-
-
-    .oneboxcase {
-        width: 350px;
+    #midblog article {
+        width: 310px;
         height: 280px;
-        background-position: center;
-        background-size: cover;
         margin: 0 auto;
-
+        border: solid 3px #ccc;
     }
 
-.oneboxcase:hover{
-opacity: 0.5;
-}
 
-
-
-    #onebox .box{
-        width: 300px;
-        height: 200px;
+    article img {
+        width: 100%;
+        height: 100%;
     }
-   
-.box h1{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 28px;
-    letter-spacing: 1px; font-weight: bold; }
 
-    .box p{font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-weight: bold;}
-
-    #twobox {
-
-        width: 1237px;
-        height: 800px;
-        background-color: brown;
-        margin: 0 auto;
-
-    }
 
     #threebox {
-        width: 1237px;
-        height: 800px;
-        background-color: yellow;
+        width: 100%;
+        height: 100%;
         margin: 0 auto;
-
     }
 
+
+
+    .imgbox {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+
+.imgbox img{
+    width: 100%; height: 100%;
+    margin: 0 auto;
+}
+
+    .imgbox:hover:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #333;
+        opacity: 0.6;
+    }
+
+    .imgbox p {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        font-size: 30px;
+        color: #fff;
+    }
 
 }
